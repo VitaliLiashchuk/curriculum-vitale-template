@@ -1,16 +1,22 @@
-\documentclass[english,a4paper,nologo,nobranding,notitle]{europasscv}
+\documentclass[a4paper,russian,nologo,notitle]{europasscv}
 
-\usepackage{fontspec}
-\newfontfamily\DejaSans{DejaVu Sans}  % For emojis
+\defaultfontfeatures{Ligatures={NoCommon, NoDiscretionary}}
+\setmainfont{Lato}
+\newfontfamily\cyrillicfont{Lato}
+
+\usepackage{polyglossia}
+\setmainlanguage{russian}
+\setotherlanguage{english}
 
 \usepackage{tagging}
 \usepackage{csquotes}
 
 
-\ecvname{John Doe}
+\ecvname{Я русский!!!}
 \ecvaddress{Minsk, Belarus}
 \ecvmobile{+353 (29) 555 35 35}
 \ecvemail{john.doe@kek.com}
+\ecvim{Skype}{kekus}
 \ecvgithubpage{www.github.com/kekus}
 \ecvgitlabpage{www.gitlab.com/kekus}
 \ecvlinkedinpage{www.linkedin.com/in/kek}
@@ -62,6 +68,13 @@
   \ecvlanguagefooter{}
 
   \ecvsection{Certificates and trainings}
-  \ecvitem{Military card}{Without re-examination \DejaSans{😼}}
+  \ecvitem{Military card}{Without re-examination}
+
+  \ecvsection{Professional interests}
+  \ecvitem{}{Development of robust applications using modern technologies and development tools}
+
+  \ecvsection{Free time}
+  \ecvitem{}{Gentoo Linux and Emacs customization}
+  \ecvitem{}{Professional literature and fiction reading}
 \end{europasscv}
 \end{document}
